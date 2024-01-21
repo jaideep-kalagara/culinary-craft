@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "culinarycraft",
+	"version": "${version}",
+	"name": "Culinary Craft",
+	"description": "Add more foods to the game!",
+	"authors": [
+		"Supergamer10920"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/culinarycraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.supergamer.culinarycraft.CulinaryCraft"
+		],
+		"client": [
+			"net.supergamer.culinarycraft.CulinaryCraftClient"
+		],
+		"fabric-datagen": [
+			"net.supergamer.culinarycraft.CulinaryCraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"culinarycraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
